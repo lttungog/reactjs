@@ -1,29 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-
-function withStyle(Component) {
-  return (props) => {
-    const style = {
-      color: "red",
-      fontSize: "2em",
-      ...props.style,
-    };
-    return <Component{...props} style={style} />;
-  }
-}
-
-const Text = ({style = {}}) => (
-  <p style = {{...style, fontFamily: "Inter"}}>MamaMia</p>
-);
-const StyleText = withStyle(Text);
-
-function Welcome({name}) {
-  return (
-    <section>
-      <h1>Hello, <span>{name}</span> 🌞</h1>
-    </section>
-  )
-}
+import UserList from './Component/UserList';
 
 function App() {
   return (
@@ -46,17 +23,10 @@ function App() {
   )
 }
 
-function User () {
-  const name = 'Tung'
-  const pic = "https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"
+export default function MyApp() {
   return (
-    <section>
-      <img className = 'user-profile-pic' src={pic} alt={name} />
-      <h2 className = 'user-name'>
-        Hello, <span className = 'user-first-name'>{name}</span> 🤩
-      </h2>
-    </section>
-  )
+    <div className='App'>
+      <UserList />
+    </div>
+  );
 }
-
-export default User;
