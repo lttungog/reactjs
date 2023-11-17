@@ -4,7 +4,7 @@ function withStyle(Component) {
   return (props) => {
     const style = {
       color: "red",
-      fontSize: "1em",
+      fontSize: "2em",
       ...props.style,
     };
     return <Component{...props} style={style} />;
@@ -43,6 +43,8 @@ function User () {
       <h2 className = 'user-name'>
         Hello, <span className = 'user-first-name'>{name}</span> 🤩
       </h2>
+      <Text />
+      <StyleText />
     </section>
   )
 }
