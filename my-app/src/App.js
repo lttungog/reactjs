@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import UserList from './component/UserList';
+// import UserList from './component/UserList';
 import ShoppingList from './component/ShoppingList';
 
 // function App() {
