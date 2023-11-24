@@ -49,14 +49,14 @@ export default function ItemsList() {
     return (
         <div>
             <div className="container p-5">
-                <div className="row">
-                    <div className='row'>
-                        {items.map((item, index) => (
-                            <div key={index} className='col-lg-4 col-md-12 mb-4'>
+            {/* Class container, padding 5 */}
+                <div className='row'>
+                {/* Introduce the grid */}
+                    {items.map((item, index) => (
+                        <div key={index} className='col-lg-4 col-md-12 mb-4'>
                                 <Item {...item} />
-                            </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
