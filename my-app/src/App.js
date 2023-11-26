@@ -1,40 +1,27 @@
-import './App.css';
-import React from 'react';
-import {FaStar} from 'react-icons/fa';
-// import PricingPage from "./component/PricingPage";
-// import ItemsList from "./component/ItemList";
-import Product from './component/Product';
+import React from "react";
+// import "./index.css";
 
-// export default function Stars() {
-//   const stars = Array.from({length: 5}, (_, index) => (
-//       <FaStar key={index} color={index < 3 ? 'orange' : 'grey'}/>
-//   ));
-
-//   return (
-//       <div>
-//           <h1>Welcome to my App Tung</h1>
-//           {stars}
-//       </div>
-//   );
-// }
-
-// export default function MyApp() {
-//   return (
-//     <div className='App'>
-//       <h1>Welcome to my App from Tung</h1>
-//       <FaStar color='red'/>
-//       <FaStar color='red'/>
-//       <FaStar color='red'/>
-//       <FaStar color='green'/>
-//       <FaStar color='yellow'/>
-//     </div>
-//   );
-// }
-
-export default function MyApp() {
+import Navbar from "./Navbar";
+import PricingHeader from "./PricingHeader.js";
+import Plans from "./Plans";
+import Footer from "./Footer";
+import PlanCard from "./PlanCard.js";
+import ItemList from "./itemlist.js"
+import Myapp from "./ProductList.js";
+import ProductList from "./ProductList.js";
+import "./App.css";
+import ListSanPham from "./Web3.js";
+export default function App() {
   return (
-    <div className="App">
-      <Product/>
+    <div className="App" id="top">
+      {/* <h1>Triển Lãm Tranh</h1> */}
+      {/* <Navbar />
+      <PricingHeader />
+        <Plans />
+      <Footer /> */}
+      {/* <ItemList /> */}
+      {/* <ProductList /> */}
+      <ListSanPham />
     </div>
   );
 }
