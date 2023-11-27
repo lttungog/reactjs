@@ -1,64 +1,91 @@
-.product {
-  position: relative;
-  border: 1px solid #ddd;
-  padding: 16px;
-  margin:  16px;
-  text-align: center;
-  max-width: 250px;
-  flex: 0 0 calc(25%-32px); /* 32px là tổng margin và padding  */
+* {
+    box-sizing: border-box;
 }
-.sale-lable {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #ff5722;
-  color: white;
-  padding: 4px;
-  font-size: 12px;
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
 }
-.product img{
-  max-width: 100%;
-  height: auto;
+
+h1 {
+    margin-top: 0;
+    font-size: 22px;
 }
-.product h3{
-  margin: 10px 0;
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
 }
-.price-container { 
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
 }
-.original-price{
-  text-decoration: line-through;
-  color: #757575;
+
+h4 {
+    margin-top: 0;
+    font-size: 16px;
 }
-.discounted-price{
-  color: #ce1212;
+
+h5 {
+    margin-top: 0;
+    font-size: 14px;
 }
-.rating{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+
+h6 {
+    margin-top: 0;
+    font-size: 12px;
 }
-.rating svg {
-  width: 20px;
-  height: 20px;
-  margin: 0 20px;
+
+code {
+    font-size: 1.2em;
 }
-.add-to-card, .view-options {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-style: 14px;
-  cursor: pointer;
-  border-radius: 4px;
+
+ul {
+    padding-inline-start: 20px;
 }
-.product-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+.square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    height: 50px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+}
+
+.board-row:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 20px;
 }
