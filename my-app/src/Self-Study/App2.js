@@ -4,7 +4,7 @@ import React from 'react';
 // import {FaStar} from 'react-icons/fa';
 // import PricingPage from "./component/PricingPage";
 // import ItemsList from "./component/ItemList";
-import ProductList from './component/ProductList';
+import ProductList from '../component/ProductList';
 
 // export default function Stars() {
 //   const stars = Array.from({length: 5}, (_, index) => (
