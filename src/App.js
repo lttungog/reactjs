@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './css/styles.css';
+import Student from "./component/Student";
 
-function App() {
+const students = [
+  {
+    id: 1,
+    name: "Brandy Romero",
+    image: "https://randomuser.me/api/portraits/women/89.jpg",
+    email: "brandy.romero@example.com"
+  },
+  {
+    id: 2,
+    name: 'Adam Cunningham',
+    image: 'https://randomuser.me/api/portraits/men/63.jpg',
+    email: 'adam.cunningham@example.com'
+  },
+  {
+    id: 3,
+    name: 'Landon Burke',
+    image: 'https://randomuser.me/api/portraits/men/20.jpg',
+    email: 'landon.burke@example.com'
+  },
+  {
+    id: 4,
+    name: 'Rick Morales',
+    image: 'https://randomuser.me/api/portraits/men/0.jpg',
+    email: 'rick.morales@example.com'
+  },
+  {
+    id: 5,
+    name: 'Anne Wells',
+    image: 'https://randomuser.me/api/portraits/women/61.jpg',
+    email: 'anne.wells@example.com'
+  }
+]
+
+export default function StudentsList() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <div>
+              <div>
+                  {students.map((item, index) => (
+                      <div key={index}>
+                              <Student {...item} />
+                      </div>
+                  ))}
+              </div>
+          </div>
+      </div>
   );
 }
-
-export default App;
